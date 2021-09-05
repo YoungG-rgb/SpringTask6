@@ -1,7 +1,6 @@
 package crudApp.dao;
 
 import crudApp.models.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
