@@ -44,6 +44,9 @@ public class HibernateConfig {
         properties.put( "hibernate.dialect", environment.getProperty("hib.dialect") );
         properties.put( "hibernate.hbm2ddl.auto", environment.getProperty("hib.hbm2ddl") );
         properties.put( "hibernate.show_sql", environment.getProperty("hib.show_sql") );
+        properties.put( "hibernate.connection.characterEncoding", environment.getProperty("hib.characterEncoding") );
+        properties.put( "hibernate.connection.CharSet", environment.getProperty("hib.CharSet") );
+        properties.put( "hibernate.connection.useUnicode", environment.getProperty("hib.useUnicode") );
         return properties;
     }
     @Bean
